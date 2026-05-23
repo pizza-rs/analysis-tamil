@@ -1,0 +1,18 @@
+[package]
+name = "pizza-analysis-tamil"
+version = "0.1.0"
+edition = "2021"
+description = "Tamil text analysis plugin for INFINI Pizza"
+license = "MIT"
+
+[features]
+default = ["std"]
+std = ["pizza-engine/std", "pizza-analysis-core/std"]
+
+[dependencies]
+pizza-engine = { path = "../../lib/engine", default-features = false }
+pizza-analysis-core = { path = "../analysis-core", default-features = false }
+hashbrown = { version = "0.14", default-features = false }
+once_cell = { version = "1", default-features = false, features = ["alloc"] }
+
+[workspace]
