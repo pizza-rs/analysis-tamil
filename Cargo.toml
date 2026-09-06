@@ -7,7 +7,7 @@ license = "MIT"
 
 [features]
 default = ["std"]
-std = ["pizza-engine/std", "pizza-analysis-core/std"]
+std = ["pizza-engine/std", "pizza-analysis-core/std", "once_cell/std"]
 
 [dependencies]
 pizza-engine = { path = "../../lib/engine", default-features = false }
